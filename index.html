@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name | Cybersecurity Researcher</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --teal: #0f766e;
+  --light-teal: #14b8a6;
+  --bg: #ffffff;
+  --text: #1f2937;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text);
+  margin-left: 1.2rem;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--teal);
+}
+
+/* HERO */
+.hero {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  background: linear-gradient(to right, #f0fdfa, #ffffff);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  color: var(--teal);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 10px 18px;
+  background: var(--teal);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+/* SECTIONS */
+section {
+  padding: 70px 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: var(--teal);
+  margin-bottom: 1.5rem;
+}
+
+/* CARDS */
+.card {
+  background: #f9fafb;
+  padding: 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--light-teal);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* FOOTER */
+footer {
+  background: #f0fdfa;
+  text-align: center;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-container">
+    <strong>Your Name</strong>
+    <div>
+      <a href="#about">About</a>
+      <a href="#qualifications">Qualifications</a>
+      <a href="#publications">Publications</a>
+      <a href="#conferences">Conferences</a>
+      <a href="#research">IR Research</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>Your Name</h1>
+    <p>PhD Researcher in Cybersecurity & Incident Response</p>
+    <p>Focusing on ontology-driven incident response, cyber resilience, and security education.</p>
+    <a class="btn" href="#">Download CV</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      Short professional bio goes here. Describe your research interests,
+      institutional affiliation, and current PhD focus in incident response.
+    </p>
+  </div>
+</section>
+
+<!-- QUALIFICATIONS -->
+<section id="qualifications">
+  <div class="container">
+    <h2 class="section-title">Qualifications</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <strong>PhD in Cybersecurity</strong><br>
+        University Name, Year
+      </div>
+      <div class="card">
+        <strong>MSc in …</strong><br>
+        University Name, Year
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+  <div class="container">
+    <h2 class="section-title">Publications</h2>
+    <div class="card">
+      Author, Title, Conference/Journal, Year.
+    </div>
+    <div class="card">
+      Author, Title, Conference/Journal, Year.
+    </div>
+  </div>
+</section>
+
+<!-- CONFERENCES -->
+<section id="conferences">
+  <div class="container">
+    <h2 class="section-title">Conferences</h2>
+
+    <h3>🎤 Spoken At</h3>
+    <div class="card">Talk title — Conference — Year</div>
+
+    <h3 style="margin-top:20px;">📍 Attended</h3>
+    <div class="card">Conference name — Year</div>
+  </div>
+</section>
+
+<!-- IR RESEARCH -->
+<section id="research">
+  <div class="container">
+    <h2 class="section-title">Incident Response Research</h2>
+
+    <div class="card">
+      <strong>Ontology</strong><br>
+      Brief description of your ontology work.
+    </div>
+
+    <div class="card">
+      <strong>Prototype Implementation</strong><br>
+      Tools, architecture, GitHub link.
+    </div>
+
+    <div class="card">
+      <strong>IR Lab</strong><br>
+      Description of lab environment and experiments.
+    </div>
+
+    <div class="card">
+      <strong>Study Sessions</strong><br>
+      Training delivered to professionals and students.
+    </div>
+
+    <div class="card">
+      <strong>Cyberwise Children IR Lab Exhibit</strong><br>
+      Outreach and impact description.
+    </div>
+
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section id="awards">
+  <div class="container">
+    <h2 class="section-title">Awards</h2>
+    <div class="card">Award Name — Organisation — Year</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: your.email@example.com</p>
+    <p>GitHub: github.com/yourname</p>
+    <p>LinkedIn: linkedin.com/in/yourname</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Your Name — Cybersecurity Research
+</footer>
+
+</body>
+</html>
