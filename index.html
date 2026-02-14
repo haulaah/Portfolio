@@ -170,22 +170,31 @@ footer {
 .tool-logos {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-top: 6px;
+  gap: 12px;
   flex-wrap: wrap;
+  margin-top: 8px;
 }
 
 .tool-logos img {
-  height: 22px;
+  height: 28px; /* adjust size as needed */
   width: auto;
   vertical-align: middle;
-  opacity: 0.95;
+  border-radius: 4px;
+  border: 1px solid #e5e7eb;
+  padding: 2px 4px;
+  transition: transform 0.15s ease, opacity 0.2s ease;
+}
+
+.tool-logos img:hover {
+  transform: translateY(-2px);
+  opacity: 1;
 }
 
 .tool-label {
   font-weight: 600;
   margin-right: 6px;
 }
+
 
 .authors {
   margin-top: 6px;
@@ -418,26 +427,31 @@ footer {
     <div class="card">
       <strong>Incident Response (IR) Study</strong><br>
 
-      <div class="tool-logos">
-       <span class="tool-label">Tools used:</span>
-
-       <img src="images/thehive.png" alt="The Hive logo" title="The Hive">
-       <img src="images/cortex.png" alt="Cortex logo" title="Cortex">
-       <img src="images/misp.png" alt="MISP logo" title="MISP">
-       <img src="images/mattermost.png" alt="Mattermost logo" title="Mattermost">
-      </div>
-
-
       <p>
         The IR Lab is a simulated incident response environment used to conduct a study where participants are trained and given IR tasks to respond to the same simulated incident scenario, following their own preferred workflow and decision-making process.
       </p>
+         <div class="tool-logos">
+           <span class="tool-label">Tools used:</span>
+
+           <a href="https://strangebee.com/thehive/" target="_blank">
+            <img src="images/tools/thehive.png" alt="The Hive" title="The Hive">
+           </a>
+
+           <a href="https://strangebee.com/cortex/" target="_blank">
+            <img src="images/tools/cortex.png" alt="Cortex" title="Cortex">
+           </a>
+
+           <a href="https://www.misp-project.org/" target="_blank">
+            <img src="images/tools/misp.png" alt="MISP" title="MISP">
+           </a>
+
+           <a href="https://mattermost.com/" target="_blank">
+            <img src="images/tools/mattermost.png" alt="Mattermost" title="Mattermost">
+           </a>
+         </div>
 
       <p>
-        This study aims to create a dataset of cybersecurity IR activities.
-      </p>
-
-      <p>
-        The tools automatically record logs of responders activities and our log extraction tool (<em>irlogextract</em>) collects the logs and converts them into a dataset.
+        This study aims to create a dataset of cybersecurity IR activities. The tools automatically record logs of responders activities and our log extraction tool (<em>irlogextract</em>) collects the logs and converts them into a dataset.
       </p>
 
       <p>
