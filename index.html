@@ -162,7 +162,49 @@ footer {
     font-size: 2rem;
   }
 }
+
+.tool-logos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+.tool-logos img {
+  height: 22px;
+  width: auto;
+  vertical-align: middle;
+  opacity: 0.95;
+}
+
+.tool-label {
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.authors {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.affiliation-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.affiliation-row img {
+  height: 26px;
+  width: auto;
+  opacity: 0.95;
+}
+
+
 </style>
+  
 </head>
 
 <body>
@@ -336,13 +378,35 @@ footer {
   </div>
 </section>
 
+
 <!-- IR RESEARCH -->
 <section id="research">
   <div class="container">
-    <h2 class="section-title">Incident Response Research</h2>
-    <p> Haula Sani Galadima (haula.galadima@ucdconnect.ie), Cormac Doherty (cormac.doherty@ucd.ie), Rob Brennan (rob.brennan@ucd.ie) </p>
+    <h2 class="section-title">PhD Research: Incident Response</h2>
 
+    <div class="authors">
+      Haula Sani Galadima (haula.galadima@ucdconnect.ie),
+      Cormac Doherty (cormac.doherty@ucd.ie),
+      Rob Brennan (rob.brennan@ucd.ie)
+    </div>
 
+    <div class="affiliation-row">
+      <img src="images/ucd.png"
+           alt="University College Dublin logo"
+           title="University College Dublin">
+
+      <img src="images/ucdcs.png"
+           alt="UCD School of Computer Science logo"
+           title="UCD School of Computer Science">
+      
+      <img src="images/cci.png"
+           alt="UCD Centre for Cybersecurity and Cybercrime Investigation logo"
+           title="UCD Centre for Cybersecurity and Cybercrime Investigation">
+      
+      <img src="images/adapt.png"
+           alt="ADAPT Centre logo"
+           title="ADAPT Centre">
+    </div>
      
     <div class="card">
       <strong>Cyber Incident Response Process Ontology (CIRPO)</strong><br>
@@ -376,7 +440,15 @@ footer {
     <div class="card">
       <strong>IR Study</strong><br>
 
-      <p><strong>Tools used:</strong> The Hive, Cortex, MISP, Mattermost</p>
+      <div class="tool-logos">
+       <span class="tool-label">Tools used:</span>
+
+       <img src="images/thehive.png" alt="The Hive logo" title="The Hive">
+       <img src="images/cortex.png" alt="Cortex logo" title="Cortex">
+       <img src="images/misp.png" alt="MISP logo" title="MISP">
+       <img src="images/mattermost.png" alt="Mattermost logo" title="Mattermost">
+      </div>
+
 
       <p>
         The IR Lab is a simulated incident response environment used to conduct a study where participants are trained and given IR tasks to respond to the same simulated incident scenario, following their own preferred workflow and decision-making process.
