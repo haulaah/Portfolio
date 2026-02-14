@@ -167,32 +167,36 @@ footer {
   }
 }
 
+/* IR Tool Logos */
 .tool-logos {
   display: flex;
   align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
+  gap: 12px;          /* space between logos */
+  flex-wrap: wrap;     /* wrap on small screens */
   margin-top: 8px;
 }
 
+.tool-logos .tool-label {
+  font-weight: 600;
+  margin-right: 6px;
+}
+
 .tool-logos img {
-  height: 28px; /* adjust size as needed */
-  width: auto;
+  width: 90px;         /* same width for all logos */
+  height: auto;        /* maintain aspect ratio */
   vertical-align: middle;
   border-radius: 4px;
   border: 1px solid #e5e7eb;
   padding: 2px 4px;
-  transition: transform 0.15s ease, opacity 0.2s ease;
+  opacity: 0.95;
+  transition: transform 0.15s ease, filter 0.2s ease, opacity 0.2s ease;
+  filter: grayscale(100%); /* optional: grayscale by default */
 }
 
 .tool-logos img:hover {
   transform: translateY(-2px);
   opacity: 1;
-}
-
-.tool-label {
-  font-weight: 600;
-  margin-right: 6px;
+  filter: grayscale(0%);   /* show color on hover */
 }
 
 
@@ -451,7 +455,7 @@ footer {
          </div>
 
       <p>
-        This study aims to create a dataset of cybersecurity IR activities. The tools automatically record logs of responders activities and our log extraction tool (<em>irlogextract</em>) collects the logs and converts them into a dataset.
+        This study aims to create a dataset of cybersecurity IR activities. The tools automatically record logs of responders activities and our log extraction tool collects the logs and converts them into a dataset.
       </p>
 
       <p>
