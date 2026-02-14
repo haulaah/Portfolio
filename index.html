@@ -167,7 +167,7 @@ footer {
   }
 }
 
-/* IR Tool Logos */
+/* IR Tool Logos - square uniform size */
 .tool-logos {
   display: flex;
   align-items: center;
@@ -182,21 +182,21 @@ footer {
 }
 
 .tool-logos img {
-  width: 90px;         /* same width for all logos */
-  height: auto;        /* maintain aspect ratio */
-  vertical-align: middle;
-  border-radius: 4px;
+  width: 60px;         /* square width */
+  height: 60px;        /* square height */
+  object-fit: contain;  /* scale logo to fit inside square without distortion */
+  background: white;    /* optional: white background for transparent logos */
+  border-radius: 6px;   /* optional rounded corners */
   border: 1px solid #e5e7eb;
-  padding: 2px 4px;
-  opacity: 0.95;
+  padding: 4px;          /* optional spacing inside the box */
+  filter: grayscale(100%);
   transition: transform 0.15s ease, filter 0.2s ease, opacity 0.2s ease;
-  filter: grayscale(100%); /* optional: grayscale by default */
 }
 
 .tool-logos img:hover {
   transform: translateY(-2px);
+  filter: grayscale(0%);
   opacity: 1;
-  filter: grayscale(0%);   /* show color on hover */
 }
 
 
