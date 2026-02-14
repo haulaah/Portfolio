@@ -105,12 +105,16 @@ nav a:hover {
   margin-bottom: 12px;
 }
 
-.ontology-image img {
+.ontology-image img,
+.prototype-image img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
   margin-top: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
 }
+
 
 /* SECTIONS */
 section {
@@ -197,7 +201,7 @@ footer {
 }
 
 .affiliation-row img {
-  height: 36px;
+  height: 46px;
   width: auto;
   opacity: 0.95;
 }
@@ -407,7 +411,54 @@ footer {
            alt="ADAPT Centre logo"
            title="ADAPT Centre">
     </div>
-     
+
+
+        <!-- IR STUDY -->
+    <div class="card">
+      <strong>Incident Response (IR) Study</strong><br>
+
+      <div class="tool-logos">
+       <span class="tool-label">Tools used:</span>
+
+       <img src="images/thehive.png" alt="The Hive logo" title="The Hive">
+       <img src="images/cortex.png" alt="Cortex logo" title="Cortex">
+       <img src="images/misp.png" alt="MISP logo" title="MISP">
+       <img src="images/mattermost.png" alt="Mattermost logo" title="Mattermost">
+      </div>
+
+
+      <p>
+        The IR Lab is a simulated incident response environment used to conduct a study where participants are trained and given IR tasks to respond to the same simulated incident scenario, following their own preferred workflow and decision-making process.
+      </p>
+
+      <p>
+        This study aims to create a dataset of cybersecurity IR activities.
+      </p>
+
+      <p>
+        The tools automatically record logs of responders activities and our log extraction tool (<em>irlogextract</em>) collects the logs and converts them into a dataset.
+      </p>
+
+      <p>
+        The dataset is loaded into our "Semantic Log Aggregation Tool and Machine Readable Knowledge Base" prototype to convert it into a machine-readable knowledge base for knowledge extraction and analysis. The structured knowledge graph helps analyse how people respond to different types of incidents. The aim is to better understand the process used during IR and explore ways of improving IR.
+      </p>
+
+      <p><strong>All data collected, used, and published from the study is anonymised.</strong></p>
+
+      <div class="button-group">
+
+        <a href="https://haulaah.github.io/IR-Lab/ir-workshop/leaderboard.html"
+           target="_blank"
+           class="btn"> View Study Statistics</a>
+      </div>
+
+      <p style="margin-top:10px;">
+        If you would like the security team at your organisation to participate,
+        kindly contact:
+        <a href="mailto:haula.galadima@ucdconnect.ie">haula.galadima@ucdconnect.ie</a>
+      </p>
+    </div>
+
     <div class="card">
       <strong>Cyber Incident Response Process Ontology (CIRPO)</strong><br>
       In this work, we extend existing ontologies to create CIRPO to model the concepts and relationships in cybersecurity incident response processes. It provides a structured representation of Incident Response information covering incidents data, responder actions, and responder communication.
@@ -417,12 +468,12 @@ footer {
       </p>
 
       <div class="button-group">
-        <a href="https://haulaah.github.io/CIRPO/" target="_blank" class="btn">🌐 View CIRPO Website</a>
-        <a href="https://github.com/haulaah/CIRPO" target="_blank" class="btn">💻 View GitHub Repository</a>
+        <a href="https://haulaah.github.io/CIRPO/" target="_blank" class="btn"> View CIRPO Documentation</a>
+        <a href="https://github.com/haulaah/CIRPO" target="_blank" class="btn"> View GitHub Repository</a>
       </div>
 
       <div class="ontology-image">
-        <img src="images/cirpo-ontology.png" alt="CIRPO Ontology Diagram">
+        <img src="images/cirpo.png" alt="CIRPO Ontology Diagram">
       </div>
     </div>
 
@@ -432,8 +483,13 @@ footer {
        This is a prototype for Incident Response log synthesis and knowledge base. This tool  extract incident response process logs from diverse Incident Response tools into machine readable knowledge base for automated knowledge management and learning to enhance Incident Response organisational cyber resilience. 
 
       <div class="button-group">
-        <a href="https://github.com/haulaah/IR-KB" target="_blank" class="btn">💻 View GitHub Repository</a>
+        <a href="https://github.com/haulaah/IR-KB" target="_blank" class="btn"> View GitHub Repository</a>
       </div>
+
+      <div class="prototype-image">
+        <img src="images/prototype.png" alt="Architecture Prototype">
+      </div>
+      
     </div>
 
 
@@ -450,7 +506,7 @@ footer {
       </p>
 
       <div class="button-group">
-        <a href="https://haulaah.github.io/IR-Lab/" target="_blank" class="btn">🌐 Visit IR Lab Website</a>
+        <a href="https://haulaah.github.io/IR-Lab/" target="_blank" class="btn"> Visit IR Lab Website</a>
       </div>
     </div>
 
