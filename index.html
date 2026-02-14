@@ -81,14 +81,35 @@ nav a:hover {
   margin-top: 1rem;
 }
 
+/* BUTTONS */
 .btn {
   display: inline-block;
-  margin-top: 1.5rem;
-  padding: 10px 18px;
+  margin-top: 8px;
+  margin-right: 8px;
+  padding: 8px 16px;
   background: var(--teal);
   color: white;
   text-decoration: none;
   border-radius: 8px;
+  font-size: 0.95rem;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  background: var(--light-teal);
+  transform: translateY(-1px);
+}
+
+.button-group {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.ontology-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
 }
 
 /* SECTIONS */
@@ -109,6 +130,12 @@ section {
   border-radius: 10px;
   margin-bottom: 1rem;
   border-left: 4px solid var(--light-teal);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
 }
 
 /* GRID */
@@ -169,9 +196,20 @@ footer {
 <section id="about">
   <div class="container">
     <h2 class="section-title">About Me</h2>
-    <p>My PhD research focuses on how improved Cyber Incident Response can enhance Organisational Cyber Resilience. The core of the research involves semantic incident response log aggregation and machine readable knowledge base for improved organisational cyber resilience.
-    <p>Research Gate: https://www.researchgate.net/profile/Haula-Galadima-2?ev=prf_overview 
-    <p>Google Scholar: https://scholar.google.com/citations?user=lfiYxlIAAAAJ&hl=en&authuser=1&oi=sra</p>
+
+    <p>
+      My PhD research focuses on how improved Cyber Incident Response can enhance Organisational Cyber Resilience. The core of the research involves semantic incident response log aggregation and machine readable knowledge base for improved organisational cyber resilience.
+    </p>
+
+    <p>
+      Research Gate:
+      <a href="https://www.researchgate.net/profile/Haula-Galadima-2" target="_blank">Profile</a>
+    </p>
+
+    <p>
+      Google Scholar:
+      <a href="https://scholar.google.com/citations?user=lfiYxlIAAAAJ" target="_blank">Profile</a>
+    </p>
   </div>
 </section>
 
@@ -303,6 +341,36 @@ footer {
   <div class="container">
     <h2 class="section-title">Incident Response Research</h2>
     <p> Haula Sani Galadima (haula.galadima@ucdconnect.ie), Cormac Doherty (cormac.doherty@ucd.ie), Rob Brennan (rob.brennan@ucd.ie) </p>
+
+
+     <!-- CIRPO -->
+    <div class="card">
+      <strong>Cyber Incident Response Process Ontology (CIRPO)</strong><br>
+      In this work, we extend existing ontologies to create CIRPO to model the concepts and relationships in cybersecurity incident response processes. It provides a structured representation of Incident Response information covering incidents data, responder actions, and responder communication.
+
+      <p>
+        This is the ontology loaded into the "Semantic Log Aggregation Tool and Machine Readable Knowledge Base" Prototype
+      </p>
+
+      <div class="button-group">
+        <a href="https://haulaah.github.io/CIRPO/" target="_blank" class="btn">🌐 View CIRPO Website</a>
+        <a href="https://github.com/haulaah/CIRPO" target="_blank" class="btn">💻 View GitHub Repository</a>
+      </div>
+
+      <div class="ontology-image">
+        <img src="images/cirpo-ontology.png" alt="CIRPO Ontology Diagram">
+      </div>
+    </div>
+
+    <!-- IR-KB -->
+    <div class="card">
+      <strong>Semantic Log Aggregation Tool and Machine Readable Knowledge Base Prototype Implementation</strong><br>
+      This prototype extracts incident response process logs from diverse IR tools into a machine readable knowledge base for automated knowledge management and learning.
+
+      <div class="button-group">
+        <a href="https://github.com/haulaah/IR-KB" target="_blank" class="btn">💻 View GitHub Repository</a>
+      </div>
+    </div>
 
     <div class="card">
       <strong>Cyber Incident Response Process Ontology (CIRPO)</strong><br>
