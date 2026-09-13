@@ -219,6 +219,19 @@ footer {
   opacity: 0.95;
 }
 
+/* CONTACT BUTTONS */
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.contact-buttons .btn {
+  margin-top: 0;
+  margin-right: 0;
+}
+
 
 </style>
   
@@ -394,7 +407,7 @@ footer {
   <div class="container">
     <h2 class="section-title">Conferences</h2>
 
-    <h3>🎤 Spoken At</h3>
+    <h3>Spoken At</h3>
     <div class="card"> Speaker - Security BSides Belfast (Workshop) - Belfast,Northern Ireland - 2026</div>
     <div class="card"> Speaker - Security BSides Calgary - Calgary,Canada - 2026</div>
     <div class="card"> Speaker - Women in Forensics Computing (WINFC) Workshop - Linkoping,Sweden - 2026</div>
@@ -407,7 +420,7 @@ footer {
     <div class="card"> Poster -  Digital Forensics Research Conference (DFRWS) - Zaragoza, Spain- 2024</div>
     <div class="card"> Poster - UCD School of Computer Science Research Poster Event - Dublin,Ireland - 2024,2025,2026</div>
 
-    <h3 style="margin-top:20px;">📍 Attended</h3>
+    <h3 style="margin-top:20px;">Attended</h3>
     <div class="card">Digital Forensics Research Conference (DFRWS) - Linkoping,Sweden - 2026</div>
     <div class="card">Black Hat USA - Las Vegas,United States - 2025,2026</div>
     <div class="card">DEFCON 33 - Las Vegas,United States - 2025,2026</div>
@@ -596,9 +609,14 @@ footer {
 <section id="contact">
   <div class="container">
     <h2 class="section-title">Contact</h2>
-    <p>Email: haula.galadima@ucdconnect.ie , haulasaniee@gmail.com;</p>
-    <p>GitHub: github.com/haulaah</p>
-    <p>LinkedIn: linkedin.com/in/haula-galadima-27011815a</p>
+    <p>Feel free to reach out through any of the platforms below.</p>
+
+    <div class="contact-buttons">
+      <a class="btn" href="mailto:haula.galadima@ucdconnect.ie">Email (UCD)</a>
+      <a class="btn" href="mailto:haulasaniee@gmail.com">Email (Gmail)</a>
+      <a class="btn" href="https://github.com/haulaah" target="_blank">GitHub</a>
+      <a class="btn" href="https://linkedin.com/in/haula-galadima-27011815a" target="_blank">LinkedIn</a>
+    </div>
   </div>
 </section>
 
